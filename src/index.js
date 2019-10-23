@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <Provider store={store}>
-        <Chat />
+        <Chat/>
     </Provider>
     , document.getElementById('root'));
 

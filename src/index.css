@@ -109,3 +109,12 @@ img{ max-width:100%;}
   height: 516px;
   overflow-y: auto;
 }
+#selected{
+  background-color: #05728f;
+}
+#not_selected{
+  background-color: #f8f8f8;
+}
+#not_selected:hover{
+  background-color: #05728f;
+}
