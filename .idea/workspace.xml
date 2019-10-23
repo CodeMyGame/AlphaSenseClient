@@ -29,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SaiwM3ynFyO5jwlTl6d5OF6j1b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -42,6 +46,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\alphasense\src\components" />
       <recent name="C:\alphasense" />
       <recent name="C:\alphasense\src" />
     </key>
@@ -94,11 +99,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571808344640</updated>
-      <workItem from="1571808347303" duration="10219000" />
+      <workItem from="1571808347303" duration="15424000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
