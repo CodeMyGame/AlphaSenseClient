@@ -31,9 +31,9 @@ export const thunk_action_fetch_messages = (channel) => {
         dispatch(fetch_messages(await response.json()))
     };
 };
-export const thunk_action_sent_message = (msg) => {
+export const thunk_action_sent_message = (msg,channel) => {
     return async function(dispatch, getState) {
-        await fetch(`http://localhost:8080/sent`, {
+        await fetch(`http://localhost:8080/${channel}`, {
             method: 'POST',
             body: JSON.stringify(msg),
             headers: {

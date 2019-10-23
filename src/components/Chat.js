@@ -38,10 +38,10 @@ class Chat extends React.Component{
 
     submitMessage = (messageString)=> {
         if(messageString.length!==0 && this.state.selectedChannel!==''){
-            const message = { message: messageString,channel:this.state.selectedChannel};
-            this.props.dispatch(thunk_action_sent_message(message));
+            const message = { message: messageString};
+            this.props.dispatch(thunk_action_sent_message(message,this.state.selectedChannel));
         }else{
-            alert("Enter message or select channel")
+            alert("select channel")
         }
     };
     render() {
@@ -66,7 +66,7 @@ class Chat extends React.Component{
                                 <div  key={index} className="channel_list a" style={{cursor:'pointer'}} onClick={this.onClickChannel.bind(this,value)}>
                                     <div className="channel_div">
                                         <div className="channel_img"><img
-                                            src="https://ptetutorials.com/images/user-profile.png" alt="#"/></div>
+                                            src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png" alt="user"/></div>
                                         <div className="channel_text">
                                             <h5>{value}</h5>
                                         </div>
@@ -97,7 +97,7 @@ class Chat extends React.Component{
                                     >
                                         <input type="text" className="write_msg" placeholder="Type a message" value={this.state.message}
                                                onChange={e => this.setState({ message: e.target.value })}/>
-                                        <button className="msg_send_btn" type="submit"><i className="fa fa-paper-plane-o"
+                                        <button disabled={!this.state.message} className="msg_send_btn" type="submit"><i className="fa fa-paper-plane-o"
                                                                                           aria-hidden="true"/></button>
                                     </form>
                                 </div>
