@@ -32,7 +32,7 @@ class Chat extends React.Component{
     };
     noChannelSelectedLayout =()=>{
         return(
-            <h1>No channel selected</h1>
+            <center><h1>No channel selected</h1></center>
         )
     };
 
